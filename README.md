@@ -43,7 +43,7 @@ A full-stack **Procure-to-Pay** system built with Django REST Framework (backend
 ## 📁 Project Structure
 
 ```
-IST_Assessment_Python_React/
+Procure-to-Pay/
 ├── backend/                    # Django backend
 │   ├── procure_to_pay/        # Django project settings
 │   ├── procurement/           # Main app
@@ -93,7 +93,7 @@ IST_Assessment_Python_React/
 1. **Clone the repository**:
    ```bash
    git clone <repository-url>
-   cd IST_Assessment_Python_React
+   cd Procure-to-Pay
    ```
 
 2. **Set up Python virtual environment**:
