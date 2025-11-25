@@ -69,7 +69,7 @@ Procure-to-Pay/
 │   ├── Dockerfile          # Frontend Dockerfile
 │   ├── nginx.conf          # Nginx configuration
 │   ├── package.json        # Node dependencies
-│   └── .env.example        # Frontend env template (if needed)
+│   └── .env.example        # Frontend env template
 │
 ├── docker-compose.yml        # Full stack Docker setup
 ├── .gitignore               # Git ignore rules
