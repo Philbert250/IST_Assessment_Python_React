@@ -1,0 +1,20 @@
+# Docker Compose for local development
+# This runs only Redis (since you're using local PostgreSQL)
+# Usage: docker-compose -f docker-compose.local.yml up
+
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:
+

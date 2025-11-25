@@ -1,0 +1,24 @@
+# Fly.io configuration for Celery Worker
+app = "procure-to-pay-celery-philbert"
+primary_region = "iad"  # Change to your preferred region
+
+[build]
+  dockerfile = "Dockerfile.prod"
+
+[env]
+  PYTHONUNBUFFERED = "1"
+  DJANGO_SETTINGS_MODULE = "procure_to_pay.settings"
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 512
+
+[processes]
+  celery = "celery -A procure_to_pay worker -l info --concurrency=2"
+
+# Mount persistent volume for media files
+[[mounts]]
+  source = "media_data_celery"
+  destination = "/app/media"
+
