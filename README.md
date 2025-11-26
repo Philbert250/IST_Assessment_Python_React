@@ -15,6 +15,14 @@ A full-stack **Procure-to-Pay** system built with Django REST Framework (backend
 - **Real-time Updates**: Background task processing with Celery
 - **Responsive UI**: Modern React frontend with Tailwind CSS
 
+## 🌐 Live Demo
+
+The application is hosted on Fly.io:
+
+- **Frontend**: [https://procure-to-pay-frontend-philbert.fly.dev](https://procure-to-pay-frontend-philbert.fly.dev)
+- **Backend API**: [https://procure-to-pay-backend-philbert.fly.dev](https://procure-to-pay-backend-philbert.fly.dev)
+- **API Documentation**: [https://procure-to-pay-backend-philbert.fly.dev/swagger/](https://procure-to-pay-backend-philbert.fly.dev/swagger/)
+
 ## 🛠 Tech Stack
 
 ### Backend
